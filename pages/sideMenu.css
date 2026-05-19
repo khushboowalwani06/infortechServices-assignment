@@ -1,43 +1,129 @@
-.header
-{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom:1px solid  #dcdcdc;
-    padding-bottom: 10px;
-     
-}
-.button
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3B3DBA;
-    color:white;
-    border:2px solid rounded;
-     gap:10px;
-      font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: Medium;
-    line-height: Auto;
-    padding: 10px 65px;
-    border: none;
-    border-radius: 8px;
+
+.Menu {
+    width: 320px;
+    
+    background: white;
+    padding: 20px;
     
 }
-#one
-{
-    display:flex;
-    gap:15px;
-    margin-bottom: 10px;
-    padding: 18px 0;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 
-.Menu img{
-    width: 32px;
-    height: 32px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.close-icon {
+    font-size: 32px;
+    color: #4b57d6;
+    cursor: pointer;
+}
+
+
+#one {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 18px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+.active {
+    color: #4b57d6;
+    font-weight: 600;
+}
+
+
+.Menu img {
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     flex-shrink: 0;
 }
+
+
+#one p {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.button {
+    width: 160px;
+    height: 42px;
+    background-color: #4b57d6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+     margin-top: 20px;
+    margin-left: 20px; 
+    display:flex;
+    align-items: center ;
+     justify-content: center;
+    gap: 10px;
+
+}
+
+.button:hover  .hover-icon{
+   
+    display: block;
+   
+
+}
+.hover-icon
+{
+    display: none;
+}
+.button:hover
+{
+     background-color: #3945c6;
+      color:white;
+}
+/* menu open */
+.Menu.active{
+    right: 0;
+}
+
+/* active menu item */
+#one.active{
+    color: #4b57d6;
+    font-weight: 600;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
 

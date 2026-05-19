@@ -62,7 +62,7 @@ h2{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 .header ul{
@@ -248,6 +248,10 @@ h2{
     right: 15%;
     top: 60%;
 }
+.menu-icon
+{
+    display: none;
+}
 /* .inside-box button{
      width: 100%;
      padding:10px 10px;
@@ -306,4 +310,44 @@ h2{
     line-height: auto;
     
 }
+.menu-icon{
+    display:block;
+    font-size:30px;
+    cursor:pointer
 }
+
+
+    .left-div{
+        flex-direction: column;
+    }
+
+    .reseach-analysts{
+        flex-direction: column;
+    }
+
+    .section-1,
+    .section-2,
+    .research-left,
+    .research-right{
+        width:100%;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .header ul{
+        display:none;
+    }
+
+    .btn{
+        display:none;
+    }
+  .menu-items
+  {
+    display: none;
+  }
+
+}
+
+

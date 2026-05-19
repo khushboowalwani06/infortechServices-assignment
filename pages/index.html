@@ -6,6 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
 </head>
+<script>
+
+function openMenu(){
+   window.location.href = "sideMenu.html";
+}
+
+</script>
 <body>
 
     <!-- navbar -->
@@ -25,11 +32,15 @@
 
             </ul>
         </div>
+
         
         <button class="btn title primary-btn">
             <img src="../images_icons/Contact-icon.png" alt="Contact Icon">
             Contact Us
         </button>
+        <div class="menu-icon" onclick="openMenu()">
+          <img src="../images_icons/Menu.png">
+        </div>
         
      </nav>
     <!-- end -->
