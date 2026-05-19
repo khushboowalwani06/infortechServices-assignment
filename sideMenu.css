@@ -1,12 +1,24 @@
+/* ================= SIDE MENU ================= */
 
 .Menu {
+    position: fixed;
+    top: 0;
+    right: -100%;          /* hidden by default */
     width: 320px;
-    
+    height: 100vh;
     background: white;
     padding: 20px;
-    
+    transition: 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
+/* when menu is open */
+.Menu.active {
+    right: 0;
+}
+
+/* ================= HEADER ================= */
 
 .header {
     display: flex;
@@ -17,6 +29,7 @@
     margin-bottom: 25px;
 }
 
+/* ================= LOGO ================= */
 
 .logo {
     display: flex;
@@ -36,6 +49,7 @@
     margin: 0;
 }
 
+/* ================= CLOSE ICON ================= */
 
 .close-icon {
     font-size: 32px;
@@ -43,6 +57,7 @@
     cursor: pointer;
 }
 
+/* ================= MENU ITEMS ================= */
 
 #one {
     display: flex;
@@ -54,14 +69,19 @@
     transition: 0.3s;
 }
 
-
-
-
-.active {
+/* active menu item */
+#one.active {
     color: #4b57d6;
     font-weight: 600;
 }
 
+#one p {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ================= MENU ICONS ================= */
 
 .Menu img {
     width: 28px;
@@ -70,13 +90,7 @@
     flex-shrink: 0;
 }
 
-
-#one p {
-    margin: 0;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-}
-
+/* ================= BUTTON ================= */
 
 .button {
     width: 160px;
@@ -89,41 +103,30 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     cursor: pointer;
-     margin-top: 20px;
-    margin-left: 20px; 
-    display:flex;
-    align-items: center ;
-     justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-
 }
 
-.button:hover  .hover-icon{
-   
+.button:hover {
+    background-color: #3945c6;
+    color: white;
+}
+
+/* hover icon effect */
+.button:hover .hover-icon {
     display: block;
-   
-
 }
-.hover-icon
-{
+
+.hover-icon {
     display: none;
 }
-.button:hover
-{
-     background-color: #3945c6;
-      color:white;
+
+/* cross image */
+.cross {
+    width: 15px;
+    height: 15px;
 }
-/* menu open */
-.Menu.active{
-    right: 0;
-}
-
-/* active menu item */
-#one.active{
-    color: #4b57d6;
-    font-weight: 600;
-}
-
-
-/* ================= MOBILE RESPONSIVE ================= */
-
