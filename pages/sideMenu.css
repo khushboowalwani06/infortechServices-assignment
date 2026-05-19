@@ -1,0 +1,43 @@
+.header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid  #dcdcdc;
+    padding-bottom: 10px;
+     
+}
+.button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B3DBA;
+    color:white;
+    border:2px solid rounded;
+     gap:10px;
+      font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: Medium;
+    line-height: Auto;
+    padding: 10px 65px;
+    border: none;
+    border-radius: 8px;
+    
+}
+#one
+{
+    display:flex;
+    gap:15px;
+    margin-bottom: 10px;
+    padding: 18px 0;
+}
+
+
+.Menu img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
